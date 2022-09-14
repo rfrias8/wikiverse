@@ -14,6 +14,7 @@
     "express": "^4.17.1",
     "morgan": "1.10.0",
     "nodemon": "^2.0.19",
+    "ract": "^0.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sequelize": "^6.21.4",
@@ -27,5 +28,18 @@
     "jest": "^27.1.0",
     "parcel-bundler": "^1.12.5",
     "react-test-renderer": "^17.0.2"
-  }
+  },
+  "description": "A wikipedia clone built using React",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfrias8/wikiverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfrias8/wikiverse/issues"
+  },
+  "homepage": "https://github.com/rfrias8/wikiverse#readme"
 }
