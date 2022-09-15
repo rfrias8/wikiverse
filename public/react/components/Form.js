@@ -8,7 +8,6 @@ export const Form = ()  => {
     const [email, setEmail] = useState("");
     // const [tags, setTags] = ("")
 
-
 	const postPage = async (ev) =>{
         // ev.preventDefault();
         const articleData = {
@@ -16,7 +15,7 @@ export const Form = ()  => {
             content,
             name: author,
             email
-          };
+        };
         try {
             const response = await fetch(`${apiURL}/wiki/`, {
             method: "POST",
@@ -28,14 +27,12 @@ export const Form = ()  => {
             )
             });
             const data = await response.json();
-
 		} catch (err) {
 			console.log("Please fill in all fields!", err)
 		}
   	}
 
     return <>
-    
         <form>
             <h1>WikiVerse</h1>
             <h2>Add a Page</h2>
@@ -45,7 +42,6 @@ export const Form = ()  => {
             <input value={email} placeholder={"Author Email"}  onChange={event => setEmail(event.target.value)}/>
             <button onClick={postPage}>Create Page</button>
         </form>
-      
     </>
 }
 
